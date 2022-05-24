@@ -1,0 +1,21 @@
+pipeline {
+      agent any
+      stages {
+          stage('21051247 Stage One') {
+          steps {
+            echo '21051247 Start of Pipeline'
+          }
+          }
+          stage('21051247 Stage Two') {
+          steps {
+            input('Push changes to Production?')
+          }
+          }
+          stage('21051247 Stage Three') {
+          steps {
+            echo 'Production website is updated successfully'
+          }
+          }
+      }
+}
+
